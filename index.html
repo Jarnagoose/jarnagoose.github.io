@@ -2,184 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Jarnagoose</title>
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-
+    <title>Fungo Bungo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            margin: 0;
+        }
+        .banner {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-nav .nav-item .nav-link {
+            color: white;
+        }
+        .navbar-nav .nav-item .nav-link:hover {
+            color: #007bff;
+        }
+        .container {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .content-section {
+            margin-top: 30px;
+        }
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-
-<div id="Home">
-    <div class="row">
-        <div class="col-lg-4 col-xl-3">
-            <section id="LandingSection">
-                <div class="flex-center flex-column">
-                <div class="card">
-                    <img class="card-img-top" src="img/Kyle.PNG" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Kyle Jarnagin</h5>
-    <p class="card-text">IT Administrator</p>
-    <a href="/files/JarnaginKyleResume.pdf" class="btn btn-primary" target="_blank">Download Resume</a>
-                </div>
-                </div>
-                </div>
-            </section>
+    <div class="banner">
+        <h1>Fungo Bungo</h1>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Brand</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
         </div>
-        <div class="col-lg-8 col-xl-9">
-            <section id="ExperienceCards">
-                <div class="container">
-                    <div class="row">
-                        <h2>Experience</h2>
-                        <hr width="100%">
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="card">
-                                <a type="button" data-bs-toggle="modal" data-bs-target="#FLDOHModal">
-                                    <div class="card-body">
-                                        <h3 class="card-title text-center">Florida Department of Health</h3>
-                                        <h5 class="card-title text-center">IT Administrator</h5>
-                                        <h6 class="card-title text-center">May 2020 - Present</h6>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- Modal FLDOH -->
-                        <div class="modal fade" id="FLDOHModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
-                            <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
-                                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">x</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <h2 class="card-title text-center">Florida Department of Health</h2>
-                                        <h3 class="card-title text-center">IT Administrator</h3>
-                                        <h5 class="card-title text-center">Full Time</h5>
-                                        <h6 class="card-title text-center">May 2020 - Present</h6>
-                                        
-                                        <p class="card-text text-center">
-                                            </p><ul class="list">
-                                                <li>Administrator for Florida Department of Health's Office365 environment, providing support and development services across various Microsoft applications.
-                                                </li>
-                                                <li>Updated and upgraded the functionality and integrity of internal databases.</li>
-                                                <li>Performed User Acceptance Testing on application and modernization projects.</li>
-                                                <li>Created, migrated, and updated Department websites in the CMS.</li>
-                                                <li>Created an internal onboarding site and developed training for state health employees.</li>
-                                                <li>Developed a secure application utilized by epidemiologists to submit reportable disease cases from the field.</li>
-                                                <li>Developed an application to automate an events management database.</li>
-                                                <li>Actively used and improved Python, Javascript, node.js, Powershell, Robocopy, Bootstrap, HTML,
-                                                    and CSS internal practices.</li>
-                                                <li>All responsibilities prior to promotion</li>
-                                            </ul>
-                                        <p></p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <a href="https://www.linkedin.com/in/kyle-jarnagin/" target="_blank" type="button" class="btn btn-default waves-effect waves-light">Contact me</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="card">
-                                <a type="button" data-bs-toggle="modal" data-bs-target="#FLDOH2Modal">
-                                    <div class="card-body">
-                                        <h3 class="card-title text-center">Florida Department of Health</h3>
-                                        <h5 class="card-title text-center">Operations Analyst</h5>
-                                        <h6 class="card-title text-center">Nov 2018 - May 2020</h6>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- Modal FLDOH2 -->
-                        <div class="modal fade" id="FLDOH2Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
-                                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">x</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <h2 class="card-title text-center">Florida Department of Health</h2>
-                                        <h3 class="card-title text-center">Operations Analyst</h3>
-                                        <h5 class="card-title text-center">Full Time</h5>
-                                        <h6 class="card-title text-center">November 2018 - May 2020</h6>
-        
-                                        <p class="card-text text-center">
-                                            </p><ul class="list">
-                                                <li>Microsoft Teams Administrator, migrated over 10,000 employees from Skype to Teams, collaborated with Microsoft to train users.</li>
-                                                <li>IT Governance Board Member, oversees the implementation of new systems across DOH IT.</li>
-                                                <li>Authored social media management project documentation to manage and update the brand presence across social networks.</li>
-                                                <li>CMS Administrator, validated user credentials, assigned roles, performed security audits.</li>
-                                                <li>Performed ADA reviews on applications and sites to ensure compliance to federal accessibility standards </li>
-                                                <li>Analytics and Data Administrator, implemented data collection across all Department sites, developed training for users to understand metrics.</li>
-                                            </ul>
-                                        <p></p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <a href="https://www.linkedin.com/in/kyle-jarnagin/" target="_blank" type="button" class="btn btn-default waves-effect waves-light">Contact me</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="card">
-                                <a type="button" data-bs-toggle="modal" data-bs-target="#ArtistModal">
-                                    <div class="card-body">
-                                        <h3 class="card-title text-center">Jarnagoose Creative</h3>
-                                        <h5 class="card-title text-center">Artist/Designer</h5>
-                                        <h6 class="card-title text-center">​Jan 2017 - Present</h6>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- Modal Artist -->
-                        <div class="modal fade" id="ArtistModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
-                                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">x</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <h1 class="card-title text-center">Jarnagoose Creative</h1>
-                                        <h3 class="card-title text-center">Artist</h3>
-                                        <h5 class="card-title text-center">Freelance</h5>
-                                        <h6 class="card-title text-center">Jan 2017 - Present</h6>
-        
-                                        <p class="card-text text-center">
-                                            </p><ul class="list">
-                                                <li>Created art and short films using open-source neural networks.</li>
-                                                <li>Served as technical lead for A Forest Full of Hungry Mouths (2017).</li>
-                                                <li>Album artist for a few local Florida bands.</li>
-                                            </ul>
-                                        <p></p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <a href="https://www.linkedin.com/in/kyle-jarnagin/" target="_blank" type="button" class="btn btn-default waves-effect waves-light">Contact me</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
+    </nav>
+    <div class="container">
+        <div class="content-section">
+            <h3>Section 1</h3>
+            <div class="image-placeholder">Image 1 Placeholder</div>
+        </div>
+        <div class="content-section">
+            <h3>Section 2</h3>
+            <div class="image-placeholder">Image 2 Placeholder</div>
+        </div>
+        <div class="content-section">
+            <h3>Section 3</h3>
+            <div class="image-placeholder">Image 3 Placeholder</div>
+        </div>
+        <div class="content-section">
+            <h3>Section 4</h3>
+            <div class="image-placeholder">Image 4 Placeholder</div>
         </div>
     </div>
-
-</div>
 <!--Scripts-->
     <!--Javascript-->
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="css/bootstrap.min.css"></script>
 </body>
 </html>
