@@ -13,38 +13,46 @@
 </head>
 <body>
     <div class="banner">
+        <a href="index.html"><img src="img/goose_full_rgb.png" alt="A lovely, majestic domestic goose in a gold crown" width=20% height=20% id="goose" class="bannerlogo">
         <a href="index.html"><h1 class="h1">Jarnagoose</h1>
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a href="#about" class="nav-link" href="#">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a href="#work" class="nav-link" href="#">Our Work</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" href="#">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
     <div class="container">
         <div class="content-section">
-            <h3>Section 1</h3>
+            <h3 id="about">About Us</h3>
             <div class="image-placeholder">Image 1 Placeholder</div>
         </div>
         <div class="content-section">
-            <h3>Section 2</h3>
+            <h3 id="work">Our Work</h3>
             <div class="image-placeholder">Image 2 Placeholder</div>
         </div>
         <div class="content-section">
-            <h3>Section 3</h3>
-            <div class="image-placeholder">Image 3 Placeholder</div>
-        </div>
-        <div class="content-section">
-            <h3>Section 4</h3>
-            <div class="image-placeholder">Image 4 Placeholder</div>
+            <h3 id="contact">Contact</h3>
+            <div class="image-placeholder">
+                <div class="contact-info">
+                    <ul>
+                        <li><span id="email">@gmail.com</span> <span class="copy-icon" onclick="copyToClipboard('email')"><img src="icons/copy.svg" class="filter-invert"/></span></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
+
+    <button id="scrollToTopBtn" onclick="scrollToTop()"><img src="icons/arrow-up-circle-fill.svg"></button>
 <!--Scripts-->
     <!--Javascript-->
     <script src="js/bootstrap.bundle.js"></script>
