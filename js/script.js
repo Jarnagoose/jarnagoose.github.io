@@ -1,10 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
     const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    const navbar = document.getElementById("navigationbar");
     window.addEventListener("scroll", function() {
-        if (window.scrollY > 100) {
+        if (window.scrollY > 50) {
             scrollToTopBtn.style.display = "block";
+            navbar.style.position = fixed;
+            navbar.style.top = 0;
         } else {
             scrollToTopBtn.style.display = "none";
+            navbar.style.position = absolute;
         }
     });
 
