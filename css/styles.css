@@ -1,0 +1,49 @@
+body {
+    background-color: #181818;
+    margin: 0;
+}
+.banner {
+    background-color: #AC4DBF;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.navbar {
+    background-color: #343a40;
+}
+.navbar-nav .nav-item .nav-link {
+    color: white;
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color: #AC4DBF;
+}
+.container {
+    text-align: center;
+    margin-top: 30px;
+}
+.content-section {
+    margin-top: 30px;
+}
+.image-placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+@font-face {
+    font-family: 'ARCO';
+    src: url('fonts/ARCO.ttf') format('truetype'),
+         url('fonts/ARCO.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+  
+.h1 {
+    font-family: 'ARCO', sans-serif;
+    font-weight: bold;
+    color: white;
+}
