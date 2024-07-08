@@ -35,13 +35,17 @@ body {
     margin-bottom: 20px;
 }
 @font-face {
-    font-family: 'ARCO';
-    src: url('fonts/ARCO.ttf') format('truetype'),
-         url('fonts/ARCO.woff') format('woff');
-    font-weight: bold;
+    font-family: 'ARCO Typography';
+    src: url('ARCOTypography.eot');
+    src: url('ARCOTypography.eot?#iefix') format('embedded-opentype'),
+        url('ARCOTypography.woff2') format('woff2'),
+        url('ARCOTypography.woff') format('woff'),
+        url('ARCOTypography.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
-  
+ 
 .h1 {
     font-family: 'ARCO', sans-serif;
     font-weight: bold;
