@@ -51,7 +51,7 @@ main {
 }
 
 footer {
-    background-color: #AC4DBF;
+    background-color: #451F4D;
     color: white;
 }
 
@@ -119,7 +119,7 @@ footer {
     animation: fadeInDown 1s ease-in-out forwards;
 }
 
-.h2 {
+.content-title {
     font-family: 'ARCO', sans-serif;
     font-weight: bold;
     font-size: 30px;
