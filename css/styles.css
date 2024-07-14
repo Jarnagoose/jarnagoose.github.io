@@ -107,11 +107,11 @@ footer {
 
 @font-face {
     font-family: 'ARCO Typography';
-    src: url('ARCOTypography.eot')
-         url('ARCOTypography.eot?#iefix') format('embedded-opentype'),
-         url('ARCOTypography.woff2') format('woff2'),
-         url('ARCOTypography.woff') format('woff'),
-         url('ARCOTypography.ttf') format('truetype');
+    src: url('fonts/ARCOTypography.eot')
+         url('fonts/ARCOTypography.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ARCOTypography.woff2') format('woff2'),
+         url('fonts/ARCOTypography.woff') format('woff'),
+         url('fonts/ARCOTypography.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
