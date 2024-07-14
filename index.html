@@ -1,71 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jarnagoose</title>
-     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="img\logo_textless_rounded_1x1_1080p_rgb.png">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-    <!--Google Fonts CSS-->
-    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;700&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jarnagoose</title>
+         <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="img\logo_textless_rounded_1x1_1080p_rgb.ico">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+        <!--Google Fonts CSS-->
+        <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;700&display=swap" rel="stylesheet">
+    </head>
 <body>
-    <div class="banner">
-        <a href="index.html"><img src="img/goose_full_rgb.png" alt="A lovely domestic goose wearing a gold crown and honking majestically." width="182.08" height="98.56" id="goose" class="bannerlogo">
-        <a href="index.html"><h1 class="h1" alt ="Return to the homepage.">Jarnagoose</h1>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-dark" alt="A navigation bar." id="navigationbar">
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
+    <header>
+        <div class="banner">
+            <a href="index.html"><img src="img/goose_full_rgb.png" alt="A lovely domestic goose wearing a gold crown and honking majestically." width="182.08" height="98.56" id="goose" class="bannerlogo">
+            <a href="index.html"><h1 class="title" alt ="Return to the homepage.">Jarnagoose</h1>
+        </div>
+    </header>
+
+    <nav class="navbar sticky-top" alt="A navigation bar." id="navigationbar">
+        <div class="container justify-content-center" id="navbarNav">
+            <ul class="nav">
                 <li class="nav-item">
-                    <a href="#about" class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="#section1">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#work" class="nav-link" href="#">Our Work</a>
+                    <a class="nav-link" href="#section2">Our Work</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#section3">Contact</a>
                 </li>
             </ul>
         </div>
+            <button id="scrollToTopBtn" class="filter-invert" onclick="scrollToTop()"><img src="icons/arrow-up-circle-fill.svg"></button>
+        </div>
     </nav>
-    <div class="container">
-        <section class="content-section" id="section1">
-            <div class="content-section-title" id="about">About Us</div>
-            <div class="image-placeholder">Jarnagoose Studios started as a group of passionate gamers looking to give back to the industry by rolling up their sleeves and making something for others to enjoy.</div>
+    <main class="container-fluid p-0">
+        <section id="section1" class="parallax bg1">
+            <div class="content">
+                <h2>Our Work</h2>
+                <p>Jarnagoose Studios started as a group of passionate gamers looking to give back to the industry by rolling up their sleeves and making something for others to enjoy.</p>
+            </div>
         </section>
-        <section class="content-section" id="section2">
-            <div class="content-section-title" id="work">Our Work</div>
-            <div class="image-placeholder">🍄</div>
+        <section id="section2" class="parallax bg2">
+            <div class="content">
+                <h2>Our Work</h2>
+                <p>🍄</p>
+            </div>
         </section>
-        <section class="content-section" id="section3">
-            <div class="content-section-title" id="contact">Contact</div>
-            <div class="image-placeholder">
+        <section id="section3" class="parallax bg3">
+            <div class="content">
+                <h2>Contact</h2>
                 <div class="contact-info">
                     <ul>
                         <li><span id="email">jarnagoose@gmail.com</span> <span class="copy-icon" onclick="copyToClipboard('email')"><img src="icons/copy.svg"/></span></li>
                     </ul>
                 </div>
             </div>
+            </div>
         </section>
-    </div>
+    </main>
 
-    <button id="scrollToTopBtn" class="filter-invert" onclick="scrollToTop()"><img src="icons/arrow-up-circle-fill.svg"></button>
-<!--Scripts-->
-    <!--Javascript-->
-    <script src="js/bootstrap.bundle.js"></script>
-    <script src="js/script.js"></script>
-    <!--Bootstrap-->
-    <script src="css/bootstrap.min.css"></script>
-</body>
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <h7 class="h7">Copyright © 2024 Jarnagoose. All Rights Reserved.</h7>
-        </div>
+    <footer class="text-center py-4">
+        <h7 class="h7">Copyright © 2024 Jarnagoose. All Rights Reserved.</h7>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
 </html>
