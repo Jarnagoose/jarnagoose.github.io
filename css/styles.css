@@ -107,6 +107,9 @@ footer {
     border-radius: 10px;
     width: 80%;
 }
+.left-justified-text{
+    text-align: justify;
+}
 
 @font-face {
     font-family: 'ARCO Typography Regular';
