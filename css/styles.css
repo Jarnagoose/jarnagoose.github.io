@@ -102,12 +102,12 @@ footer {
 }
 
 .content {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 80%);
+    padding: 1%;
+    border-radius: 1%;
     width: 80%;
     position: absolute;
-    top: 10vw;
+    top: 10%;
 }
 .left-justified-text{
     text-align: justify;
@@ -204,6 +204,7 @@ footer {
 .contact-info ul {
     list-style-type: none;
     padding: 0;
+    line-height: 50%
 }
 
 .contact-info li {
