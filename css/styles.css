@@ -9,7 +9,7 @@ body, html {
 header{
     background-color: #AC4DBF;
     color: white;
-    padding: 3vh 0px;
+    padding: 20px 0px;
     text-align: center;
 }
 
@@ -18,18 +18,17 @@ header{
     font-family: 'ARCO Typography Regular', Fallback, sans-serif;
     font-weight: light;
     color: white;
-    height: 8vh;
-    white-space: nowrap;
+    height: 60px;
 }
 
 :target {
-    scroll-margin-top: 11vh; /* offsets anchor points b/c of sticky navbar*/
+    scroll-margin-top: 80px; /* offsets anchor points b/c of sticky navbar*/
 }
 
 .nav-item .nav-link {
     transition: transform 0.3s ease;
     color: white;
-    padding: 1vh 3vw;
+    padding: 10px 30px;
 }
 
 .nav-item .nav-link:hover {
