@@ -106,6 +106,8 @@ footer {
     padding: 10px;
     border-radius: 10px;
     width: 80%;
+    position: absolute;
+    top: 10vw;
 }
 .left-justified-text{
     text-align: justify;
