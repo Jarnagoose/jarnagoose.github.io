@@ -15,7 +15,7 @@ header{
 
 .navbar{
     background-color: #451F4D;
-    font-family: 'ARCO Typography', Fallback, sans-serif;
+    font-family: 'ARCO Typography Regular', Fallback, sans-serif;
     font-weight: light;
     color: white;
     height: 8vh;
@@ -110,7 +110,7 @@ footer {
 }
 
 @font-face {
-    font-family: 'ARCO Typography';
+    font-family: 'ARCO Typography Regular';
     src: url('fonts/ARCOTypography.eot');
     src: url('fonts/ARCOTypography.eot?#iefix') format('embedded-opentype'),
          url('fonts/ARCOTypography.woff2') format('woff2'),
@@ -131,7 +131,7 @@ footer {
 }
 
 .title {
-    font-family: 'ARCO Typography', Fallback, sans-serif;
+    font-family: 'ARCO Typography Regular', Fallback, sans-serif;
     font-weight: bold;
     font-size: 25px;
     color: white;
@@ -140,7 +140,7 @@ footer {
 }
 
 .content-title {
-    font-family: 'ARCO Typography', Fallback, sans-serif;
+    font-family: 'ARCO Typography Regular', Fallback, sans-serif;
     font-weight: bold;
     font-size: 30px;
     color: #AC4DBF;
