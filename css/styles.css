@@ -48,8 +48,8 @@ main {
 }
 
 #scrollToTopBtnL{
-    bottom: 20px;
-    left: 20px;
+    bottom: 20%;
+    left: 20%;
     display: none;
     background-color: #ffffff00;
     border: none;
@@ -59,8 +59,8 @@ main {
 }
 
 #scrollToTopBtnR{
-    bottom: 20px;
-    right: 20px;
+    bottom: 2%;
+    right: 2%;
     display: none;
     background-color: #ffffff00;
     border: none;
@@ -76,7 +76,6 @@ footer {
 
 .parallax {
     position: relative;
-    height: 175vh;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -87,14 +86,17 @@ footer {
 
 .bg1 {
     background-image: url('parallax/1.png');
+    height: 175vh;
 }
 
 .bg2 {
     background-image: url('parallax/2.png');
+    height: 175vh;
 }
 
 .bg3 {
     background-image: url('parallax/3.png');
+    height: 175vh;
 }
 
 .bannerlogo {
@@ -103,11 +105,11 @@ footer {
 
 .content {
     background: rgba(255, 255, 255, 80%);
-    padding: 1%;
-    border-radius: 1%;
+    padding: 20px 50px;
+    border-radius: 10px;
     width: 80%;
     position: absolute;
-    top: 10%;
+    top: 50px;
 }
 .left-justified-text{
     text-align: justify;
@@ -237,4 +239,8 @@ footer {
 
 .filter-invert{
     filter: invert(100%);
+}
+
+.social-bar{
+    list-style-type: none;
 }
