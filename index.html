@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head id="top">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jarnagoose</title>
-        <!--OPEN GRAPH META TAGS-->
-        <meta property="og:title" content="Jarnagoose Studios">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="https://jarnagoose.com/img/oglogoicon.png">
-        <meta property="og:description" content="Welcome to Jarnagoose Studios, we are a small collaboration of independent artists working hard to make video games worth playing!">
-         <!-- Favicon -->
-        <link rel="icon" type="image/x-icon" href="img\logo_textless_rounded_1x1_1080p_rgb.ico">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="css/styles.css">
-        <!--Google Fonts CSS-->
-        <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;700&display=swap" rel="stylesheet">
-    </head>
+<head id="top">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarnagoose</title>
+    <!-- OPEN GRAPH META TAGS -->
+    <meta property="og:title" content="Jarnagoose Studios">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://jarnagoose.com/img/oglogoicon.png">
+    <meta property="og:description" content="Welcome to Jarnagoose Studios, we are a small collaboration of independent artists working hard to make video games worth playing!">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/logo_textless_rounded_1x1_1080p_rgb.ico">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Fonts CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;700&display=swap" rel="stylesheet">
+</head>
 <body>
     <header>
         <div class="banner">
-            <a href="index.html"><img src="img/logo_main_57x31_620p_rgb.png" alt="A lovely domestic goose wearing a gold crown and honking majestically." width="228" height="122" id="goose" class="bannerlogo">
+            <a href="index.html">
+                <img src="img/logo_main_57x31_620p_rgb.png" alt="A lovely domestic goose wearing a gold crown and honking majestically." width="228" height="122" id="goose" class="bannerlogo">
+            </a>
         </div>
     </header>
 
     <nav class="navbar align-items-center sticky-top" alt="A navigation bar." id="navigationbar">
         <div>
-            <button id="scrollToTopBtnL" onclick="scrollToTop()"><img src="img\logo_textless_rounded_1x1_1080p_rgb.png" width="35" height="35"></button>
+            <button id="scrollToTopBtnL" aria-label="Scroll to Top" onclick="scrollToTop()">
+                <img src="img/logo_textless_rounded_1x1_1080p_rgb.png" width="35" height="35" alt="Scroll to Top">
+            </button>
         </div>
         <div class="container align-items-center justify-content-center" id="navbarNav">
             <ul class="nav">
@@ -43,10 +47,12 @@
             </ul>
         </div>
         <div>
-            <button id="scrollToTopBtnR" class="filter-invert" onclick="scrollToTop()"><img src="icons/arrow-up-circle-fill.svg" width="30" height="30"></button>
-        </div>
+            <button id="scrollToTopBtnR" class="filter-invert" aria-label="Scroll to Top" onclick="scrollToTop()">
+                <img src="icons/arrow-up-circle-fill.svg" width="30" height="30" alt="Scroll to Top">
+            </button>
         </div>
     </nav>
+
     <main class="container-fluid p-0">
         <section id="aboutus" class="parallax bg1">
             <div class="content">
@@ -54,22 +60,24 @@
                     <h2>About Us</h2>
                 </div>
                 <div class="left-justified-text">
-                <p>Jarnagoose Studios started as a group of passionate gamers looking to give back to the industry by rolling up their sleeves and making something for others to enjoy.</p><p>But that doesn't tell the whole story.</p><p>We want more than good game design. We want to bring authenticity and charm to the games we make. We want to show others that, with a good team, and dash of gumption, games can be fun and imaginative again!</p>
-                <p>We don't answer to shareholders, we're not dictacted by market trends and spreadsheets, we're just a silly little flock of gamers here at Jarnagoose Studios.</p>
-                <br>
-                <p>Speaking of our flock, you'd probably like to know a little bit more about our team here at Jarnagoose Studios:</p>
-                <dl>
-                    <dt>Senior Developer: Serin</dt>
+                    <p>Jarnagoose Studios started as a group of passionate gamers looking to give back to the industry by rolling up their sleeves and making something for others to enjoy.</p>
+                    <p>But that doesn't tell the whole story.</p>
+                    <p>We want more than good game design. We want to bring authenticity and charm to the games we make. We want to show others that, with a good team, and dash of gumption, games can be fun and imaginative again!</p>
+                    <p>We don't answer to shareholders, we're not dictated by market trends and spreadsheets, we're just a silly little flock of gamers here at Jarnagoose Studios.</p>
+                    <br>
+                    <p>Speaking of our flock, you'd probably like to know a little bit more about our team here at Jarnagoose Studios:</p>
+                    <dl>
+                        <dt>Senior Developer: Serin</dt>
                         <dd>Serin has been programming games for fun since he was just a little line of code, Serin was one of the first to join the flock, and has been here since the very beginning.</dd>
-                    <dt>Narrative Design/Project Manager: Indefinite</dt>
-                    <dd>Indefinite wears many hats, besides translating the crayon etched ravings of Mr. Jarnagoose into something coherent, Indefinite also serves to keep everyone focused. If anyone deserves a medal, it's him.</dd>
-                    <dt>Art Department: Czbc</dt>
-                    <dd>Somehow holding the entire art department together is one talented individual, CzBC. Legend says 18 years ago he taught Jarnagoose how to sprite his very first piece of art on the computer. Legend also says it was kinda bad.</dd>
-                <dt>Composer: J<sup>2</sup></dt>
-                    <dd>Be prepared to have your socks blown off by the musical stylings of our most talented composer. This will be her first game composition, but J<sup>2</sup> is no stranger to music, in fact you may have even seen her on tour with one of her bands!</dd>
-                    <dt>Creative Director/Head: Mr. Jarnagoose</dt>
-                    <dd><strong>*HONK*</strong> The creative driving force behind our studio is an enigma, some say he's more goose than man, some say he's more jar than goose. One thing is for sure, he really likes breadcrusts and wobbling around.</dd>
-                </dl>
+                        <dt>Narrative Design/Project Manager: Indefinite</dt>
+                        <dd>Indefinite wears many hats, besides translating the crayon etched ravings of Mr. Jarnagoose into something coherent, Indefinite also serves to keep everyone focused. If anyone deserves a medal, it's him.</dd>
+                        <dt>Art Department: Czbc</dt>
+                        <dd>Somehow holding the entire art department together is one talented individual, CzBC. Legend says 18 years ago he taught Jarnagoose how to sprite his very first piece of art on the computer. Legend also says it was kinda bad.</dd>
+                        <dt>Composer: J<sup>2</sup></dt>
+                        <dd>Be prepared to have your socks blown off by the musical stylings of our most talented composer. This will be her first game composition, but J<sup>2</sup> is no stranger to music, in fact you may have even seen her on tour with one of her bands!</dd>
+                        <dt>Creative Director/Head: Mr. Jarnagoose</dt>
+                        <dd><strong>*HONK*</strong> The creative driving force behind our studio is an enigma, some say he's more goose than man, some say he's more jar than goose. One thing is for sure, he really likes bread crusts and wobbling around.</dd>
+                    </dl>
                 </div>
             </div>
         </section>
@@ -81,10 +89,10 @@
                 <h3>🍄Fungo Bungo🍄</h3>
                 <div class="left-justified-text">
                     <p>Our flagship title is a mushroom-themed, turn-based RPG, set in a fantastical world.</p>
-                <p>Don't let the cute name confuse you! This adventure seeks to make unlikely heroes out of four mushfolk - our mushroom inspired people - as they journey across the land trying to figure out the origin of a force known only as Corruption.</p>
-                <br>
-                <p>This game is still in early development with no current release date for demos or alpha feedback. We're building this baby from the ground up, and that takes time!</p>
-                <p>Until we get to a point where players can demo the first region, enjoy some art of our protagonists and let your imagination run wild! See you out in the forests!</p>
+                    <p>Don't let the cute name confuse you! This adventure seeks to make unlikely heroes out of four mushfolk - our mushroom inspired people - as they journey across the land trying to figure out the origin of a force known only as Corruption.</p>
+                    <br>
+                    <p>This game is still in early development with no current release date for demos or alpha feedback. We're building this baby from the ground up, and that takes time!</p>
+                    <p>Until we get to a point where players can demo the first region, enjoy some art of our protagonists and let your imagination run wild! See you out in the forests!</p>
                 </div>
             </div>
         </section>
@@ -96,13 +104,12 @@
                 <span>Reach us at</span>
                 <div class="contact-info">
                     <ul>
-                        <li><span id="email">jarnagoosestudios@gmail.com</span> <span class="copy-icon" onclick="copyToClipboard('email')"><img src="icons/copy.svg"/></span></li>
-                        <ul>
+                        <li><span id="email">jarnagoosestudios@gmail.com</span> <span class="copy-icon" onclick="copyToClipboard('email')"><img src="icons/copy.svg" alt="Copy Email"></span></li>
+                    </ul>
                 </div>
                 <span>or on social media:</span>
                 <div class="social-bar">
-                    <a href="https://linktr.ee/JarnagooseStudios" target="_blank" rel="noopener noreferrer"><img src="icons/Linktree_idEu3RV5XQ_3.svg" width="25" height="25" id="linktree"></a>
-                </div>
+                    <a href="https://linktr.ee/JarnagooseStudios" target="_blank" rel="noopener noreferrer"><img src="icons/Linktree_idEu3RV5XQ_3.svg" width="25" height="25" id="linktree" alt="Linktree"></a>
                 </div>
             </div>
         </section>
