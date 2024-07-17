@@ -251,6 +251,7 @@ footer {
     align-items: left;
     justify-content: left;
     transition: transform 0.15s;
+    list-style-type: none;
 }
 
 .social-bar ul li:hover{
