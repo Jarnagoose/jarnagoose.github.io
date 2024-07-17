@@ -241,6 +241,18 @@ footer {
     filter: invert(100%);
 }
 
-.social-bar{
+.social-bar ul{
     list-style-type: none;
+    padding: 0;
+}
+
+.social-bar ul li{
+    margin: 5px 0;
+    align-items: left;
+    justify-content: left;
+    transition: transform 0.15s;
+}
+
+.social-bar ul li:hover{
+    transform: scale(1.1);
 }
