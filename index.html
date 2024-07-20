@@ -27,36 +27,57 @@
             </a>
         </div>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-dark align-items-center sticky-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <!-- Navbar for large screens -->
+<nav class="navbar navbar-expand-lg sticky-top navbar-large">
+    <div>
+        <button id="scrollToTopBtnL" aria-label="Scroll to Top" onclick="scrollToTop()">
+            <img src="img/logo_textless_rounded_1x1_1080p_rgb.png" width="35" height="35" alt="Scroll to Top">
         </button>
-        <div>
-            <button id="scrollToTopBtnL" aria-label="Scroll to Top" onclick="scrollToTop()">
-                <img src="img/logo_textless_rounded_1x1_1080p_rgb.png" width="35" height="35" alt="Scroll to Top">
-            </button>
-        </div>
-        
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="#aboutus">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#ourwork">Our Work</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <button id="scrollToTopBtnR" class="filter-invert" aria-label="Scroll to Top" onclick="scrollToTop()">
-                <img src="icons/arrow-up-circle-fill.svg" width="30" height="30" alt="Scroll to Top">
-            </button>
-        </div>
-        
-    </nav>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarLarge">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#aboutus">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#ourwork">Our Work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <button id="scrollToTopBtnR" class="filter-invert" aria-label="Scroll to Top" onclick="scrollToTop()">
+            <img src="icons/arrow-up-circle-fill.svg" width="30" height="30" alt="Scroll to Top">
+        </button>
+    </div>
+</nav>
+
+<!-- Navbar for small screens -->
+<nav class="navbar navbar-expand-lg sticky-top navbar-small">
+    <div>
+        <button class="scrollToTopBtnL ml-auto" aria-label="Scroll to Top" onclick="scrollToTop()">
+            <img src="img/logo_textless_rounded_1x1_1080p_rgb.png" width="35" height="35" alt="Scroll to Top">
+        </button>
+    </div>
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSmall" aria-controls="navbarSmall" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSmall">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item ml-auto">
+                <a class="nav-link" href="#aboutus">About Us</a>
+            </li>
+            <li class="nav-item ml-auto">
+                <a class="nav-link" href="#ourwork">Our Work</a>
+            </li>
+            <li class="nav-item ml-auto">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
     <main class="container-fluid p-0">
         <section id="aboutus" class="parallax bg1">
             <div class="content">
