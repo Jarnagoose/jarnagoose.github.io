@@ -2,16 +2,19 @@ document.addEventListener("DOMContentLoaded", function() {
     const scrollToTopBtnL = document.getElementById("scrollToTopBtnL");
     const scrollToTopBtnL2 = document.getElementById("scrollToTopBtnL2");
     const scrollToTopBtnR = document.getElementById("scrollToTopBtnR");
+    const scrollToTopBtnR2 = document.getElementById("scrollToTopBtnR2");
 
     window.onscroll = function() {
-        if (window.scrollY > 150) {
+        if (window.scrollY > 160) {
             scrollToTopBtnL.style.display = "block";
             scrollToTopBtnL2.style.display = "block";
             scrollToTopBtnR.style.display = "block";
+            scrollToTopBtnR2.style.display = "block";
         } else {
             scrollToTopBtnL.style.display = "none";
             scrollToTopBtnL2.style.display = "none";
             scrollToTopBtnR.style.display = "none";
+            scrollToTopBtnR2.style.display = "none";
         }
     };
 

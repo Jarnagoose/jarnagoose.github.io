@@ -71,7 +71,7 @@ header{
     .nav-item .nav-link {
         transition: transform 0.3s ease;
         color: white;
-        padding: 10px 0px;
+        padding: 10px 20px;
     }
     
     .nav-item .nav-link:hover {
@@ -112,6 +112,18 @@ main {
 #scrollToTopBtnR{
     bottom: 2%;
     right: 2%;
+    display: none;
+    background-color: #ffffff00;
+    border: none;
+    padding: 2.5px;
+    border-radius: 17.5px;
+    cursor: pointer;
+}
+
+#scrollToTopBtnR2{
+    position: fixed;
+    bottom: 2%;
+    right: 3%;
     display: none;
     background-color: #ffffff00;
     border: none;
