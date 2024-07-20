@@ -1,13 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
     const scrollToTopBtnL = document.getElementById("scrollToTopBtnL");
+    const scrollToTopBtnL2 = document.getElementById("scrollToTopBtnL2");
     const scrollToTopBtnR = document.getElementById("scrollToTopBtnR");
 
     window.onscroll = function() {
         if (window.scrollY > 150) {
             scrollToTopBtnL.style.display = "block";
+            scrollToTopBtnL2.style.display = "block";
             scrollToTopBtnR.style.display = "block";
         } else {
             scrollToTopBtnL.style.display = "none";
+            scrollToTopBtnL2.style.display = "none";
             scrollToTopBtnR.style.display = "none";
         }
     };
