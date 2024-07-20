@@ -43,6 +43,12 @@ header{
     animation: unScaleTilt 0.3s ease-out forwards;
 }
 
+.navbar-toggler:not(:hover) {
+    transform: scale(1);
+    color: white;
+    animation: unScaleTilt 0.3s ease-out forwards;
+}
+
 main {
     text-align: center;
 }
