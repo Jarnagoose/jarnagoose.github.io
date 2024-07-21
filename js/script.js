@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Load dark mode preference from localStorage
     if (localStorage.getItem('dark-mode') === 'enabled') {
         root.classList.add('dark-mode');
+        toggleSwitch.checked = true;  // Set the switch to "on" if dark mode is enabled
     }
 
     toggleSwitch.addEventListener('change', function () {
