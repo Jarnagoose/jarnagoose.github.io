@@ -1,20 +1,42 @@
+:root {
+    --color-A: #AC4DBF;
+    --color-B: #733380;
+    --color-C: #451F4D;
+    --color-D: #F27F0C;
+    --color-E: #331A00;
+    --color-F: #ffffff;
+    --color-F2: #ffffffcc;
+    --color-G: #000000;
+}
+
+:root.dark-mode {
+    --color-A: #000000;
+    --color-B: #733380;
+    --color-C: #181818;
+    --color-D: #F27F0C;
+    --color-E: #331A00;
+    --color-F: #AC4DBF;
+    --color-F2: #000000cc;
+    --color-G: #FFFFFF;
+}
+
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'Livvic', sans-serif;
     scroll-behavior: smooth;
-    color: black;
+    color: var(--color-G);
 }
 
 header{
-    background-color: #AC4DBF;
-    color: white;
+    background-color: var(--color-A);
+    color: var(--color-F);
     padding: 20px 0px;
     text-align: center;
 }
 
 .navbar-toggler {
-    color: white;
+    color: var(--color-F);
 }
 
 .navbar-large {
@@ -31,27 +53,27 @@ header{
     }
     .navbar-large {
         display: flex;
-        background-color: #451F4D;
+        background-color: var(--color-C);
         font-family: 'ARCO Typography Regular', Fallback, sans-serif;
         font-weight: light;
-        color: white;
+        color: var(--color-F);
     }
 
     .nav-item .nav-link {
         transition: transform 0.3s ease;
-        color: white;
+        color: var(--color-F);
         padding: 10px 0px;
     }
     
     .nav-item .nav-link:hover {
         transform: scale(1.1);
-        color: #F27F0C;
-        filter: drop-shadow(1px 1px 0px #331A00);
+        color: var(--color-D);
+        filter: drop-shadow(1px 1px 0px var(--color-E));
         animation: scaleTilt 0.15s ease-out forwards;
     }
     .nav-item .nav-link:not(:hover) {
         transform: scale(1);
-        color: white;
+        color: var(--color-F);
         animation: unScaleTilt 0.3s ease-out forwards;
     }
 }
@@ -63,23 +85,23 @@ header{
     }
     .navbar-small {
         display: flex;
-        background-color: #451F4D;
+        background-color: var(--color-C);
         font-family: 'ARCO Typography Regular', Fallback, sans-serif;
         font-weight: light;
-        color: white;
+        color: var(--color-F);
     }
     .nav-item .nav-link {
         transition: transform 0.3s ease;
-        color: white;
+        color: var(--color-F);
         padding: 10px 20px;
     }
     
     .nav-item .nav-link:hover {
-        color: #F27F0C;
-        filter: drop-shadow(1px 1px 0px #331A00);
+        color: var(--color-D);
+        filter: drop-shadow(1px 1px 0px var(--color-E));
     }
     .nav-item .nav-link:not(:hover) {
-        color: white;
+        color: var(--color-F);
     }
 }
 
@@ -133,8 +155,8 @@ main {
 }
 
 footer {
-    background-color: #451F4D;
-    color: white;
+    background-color: var(--color-C);
+    color: var(--color-F);
 }
 
 .parallax {
@@ -167,7 +189,7 @@ footer {
 }
 
 .content {
-    background: rgba(255, 255, 255, 80%);
+    background: var(--color-F2);
     padding: 20px 50px;
     border-radius: 10px;
     width: 80%;
@@ -203,8 +225,8 @@ footer {
     font-family: 'ARCO Typography Regular', Fallback, sans-serif;
     font-weight: bold;
     font-size: 25px;
-    color: white;
-    filter: drop-shadow(0px 1px 0px #733380);
+    color: var(--color-F);
+    filter: drop-shadow(0px 1px 0px var(--color-B));
     animation: fadeInDown 1s ease-in-out forwards;
 }
 
@@ -212,14 +234,14 @@ footer {
     font-family: 'ARCO Typography Regular', Fallback, sans-serif;
     font-weight: bold;
     font-size: 30px;
-    color: #AC4DBF;
-    filter: drop-shadow(1px 1px 0px #451F4D);
+    color: var(--color-A);
+    filter: drop-shadow(1px 1px 0px var(--color-C));
 }
 
 .h3 {
     font-family: 'Livvic', sans-serif;
     font-weight: bold;
-    color: white;
+    color: var(--color-F);
 }
 
 @keyframes fadeInUp {
@@ -247,40 +269,40 @@ footer {
 @keyframes scaleTilt {
     0% {
         transform: scale(1) rotate(0turn);
-        color: #FFFFFF;
+        color: var(--color-main-white);
     }
     100% {
         transform: scale(1.1) rotate(-0.01turn);
-        color:#F27F0C
+        color:var(--color-D)
     }
 }
 
 @keyframes unScaleTilt {
     0% {
         transform: scale(1.1) rotate(-0.01turn);
-        color:#F27F0C
+        color:var(--color-D)
     }
     100% {
         transform: scale(1) rotate(0turn);
-        color: #FFFFFF;
+        color: var(--color-main-white);
     }
 }
 
 @keyframes whiteToOrange {
     0% {
-        color:#F27F0C
+        color:var(--color-D)
     }
     100% {
-        color: #FFFFFF;
+        color: var(--color-main-white);
     }
 }
 
 @keyframes whiteToOrange {
     0% {
-        color:#F27F0C
+        color:var(--color-D)
     }
     100% {
-        color: #FFFFFF;
+        color: var(--color-main-white);
     }
 }
 
@@ -315,7 +337,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--color-F);
 }
 
 .filter-invert{

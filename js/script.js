@@ -41,3 +41,24 @@ document.addEventListener("DOMContentLoaded", function() {
         window.scrollTo({top: 0, behavior: 'smooth'});
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleButton = document.getElementById('dark-mode-toggle');
+    const root = document.documentElement;
+
+    // Load dark mode preference from localStorage
+    if (localStorage.getItem('dark-mode') === 'enabled') {
+        root.classList.add('dark-mode');
+    }
+
+    toggleButton.addEventListener('click', function () {
+        root.classList.toggle('dark-mode');
+        
+        // Save dark mode preference to localStorage
+        if (root.classList.contains('dark-mode')) {
+            localStorage.setItem('dark-mode', 'enabled');
+        } else {
+            localStorage.removeItem('dark-mode');
+        }
+    });
+});
