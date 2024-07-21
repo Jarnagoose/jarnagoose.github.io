@@ -314,7 +314,7 @@ footer {
 
 .contact-info ul {
     list-style-type: none;
-    padding: 0;
+    padding: 0 0;
     line-height: 50%
 }
 
@@ -355,11 +355,13 @@ footer {
 }
 
 .social-bar ul{
+    display: inline-block;
     list-style-type: none;
-    padding: 0;
+    padding: 5px;
 }
 
 .social-bar ul li{
+    display: inline-block;
     margin: 5px 0;
     align-items: left;
     justify-content: left;
@@ -368,6 +370,7 @@ footer {
 }
 
 .social-bar ul li:hover{
+    display: inline-block;
     transform: scale(1.1);
 }
 
