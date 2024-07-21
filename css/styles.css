@@ -10,6 +10,8 @@
     --color-G: #000000;
     --invertA: 100%;
     --invertB: 0%;
+    --slider-start: 4px;
+    --slider-move: 21;
 }
 
 :root.dark-mode {
@@ -24,6 +26,8 @@
     --color-G: #FFFFFF;
     --invertA: 100%;
     --invertB: 100%;
+    --slider-start: 25;
+    --slider-move: -21;
 }
 
 body, html {
@@ -409,7 +413,7 @@ footer {
     content: "";
     height: 21px;
     width: 21px;
-    left: 4px;
+    left: var(--slider-start);;
     bottom: 4px;
     background-color: white;
     -webkit-transition: .4s;
@@ -425,9 +429,9 @@ footer {
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(21px);
-    -ms-transform: translateX(21px);
-    transform: translateX(21px);
+    -webkit-transform: translateX(var(--slider-move));
+    -ms-transform: translateX(var(--slider-move));
+    transform: translateX(var(--slider-move));
   }
   
   /* Rounded sliders */
