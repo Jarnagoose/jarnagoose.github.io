@@ -26,10 +26,13 @@
                 <img src="img/logo_main_57x31_620p_rgb.png" alt="A lovely domestic goose wearing a gold crown and honking majestically." width="228" height="122" id="goose" class="bannerlogo">
             </a>
         </div>
-        <!-- dark mode button
+        <!-- dark mode button -->
         <div class="d-flex justify-content-center mt-3">
-            <button id="dark-mode-toggle" class="btn btn-primary">Toggle Dark Mode</button>
-        </div> -->
+            <label class="switch" id="dark-mode-toggle">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
     </header>
     <!-- Navbar for large screens -->
 <nav class="navbar navbar-expand-lg sticky-top navbar-large">
@@ -52,7 +55,7 @@
         </ul>
     </div>
     <div>
-        <button id="scrollToTopBtnR" class="filter-invert" aria-label="Scroll to Top" onclick="scrollToTop()">
+        <button id="scrollToTopBtnR" class="filter-invertA" aria-label="Scroll to Top" onclick="scrollToTop()">
             <img src="icons/arrow-up-circle-fill.svg" width="30" height="30" alt="Scroll to Top">
         </button>
     </div>
@@ -65,7 +68,7 @@
             <img src="img/logo_textless_rounded_1x1_1080p_rgb.png" width="35" height="35" alt="Scroll to Top">
         </button>
     </div>
-    <button class="navbar-toggler ml-auto filter-invert" type="button" data-toggle="collapse" data-target="#navbarSmall" aria-controls="navbarSmall" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler ml-auto filter-invertA" type="button" data-toggle="collapse" data-target="#navbarSmall" aria-controls="navbarSmall" aria-expanded="false" aria-label="Toggle navigation">
         <img src="icons/list.svg" width="35" height="35" alt="Menu">
     </button>
     <div class="collapse navbar-collapse" id="navbarSmall">
@@ -82,7 +85,7 @@
         </ul>
     </div>
     <div>
-        <button id="scrollToTopBtnR2" class="filter-invert" aria-label="Scroll to Top" onclick="scrollToTop()">
+        <button id="scrollToTopBtnR2" class="filter-invertA" aria-label="Scroll to Top" onclick="scrollToTop()">
             <img src="icons/arrow-up-circle-fill.svg" width="30" height="30" alt="Scroll to Top">
         </button>
     </div>
@@ -138,13 +141,13 @@
                 <span>Reach us at</span>
                 <div class="contact-info">
                     <ul>
-                        <li><span id="email">jarnagoosestudios@gmail.com</span> <span class="copy-icon" onclick="copyToClipboard('email')"><img src="icons/copy.svg" alt="Copy Email"></span></li>
+                        <li><span id="email">jarnagoosestudios@gmail.com</span> <span class="copy-icon" onclick="copyToClipboard('email')"><img src="icons/copy.svg" alt="Copy Email" class="filter-invertB"></span></li>
                     </ul>
                 </div>
                 <span>or on social media:</span>
                 <div class="social-bar">
                     <ul>
-                        <li><a href="https://linktr.ee/JarnagooseStudios" target="_blank" rel="noopener noreferrer"><img src="icons/Linktree_idEu3RV5XQ_3.svg" width="25" height="25" id="linktree" alt="Linktree"></a></li>
+                        <li><a href="https://linktr.ee/JarnagooseStudios" target="_blank" rel="noopener noreferrer"><img src="icons/Linktree_idEu3RV5XQ_3.svg" width="25" height="25" id="linktree" alt="Linktree" class="filter-invertB"></a></li>
                     </ul>
                 </div>
             </div>

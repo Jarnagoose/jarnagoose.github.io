@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const toggleButton = document.getElementById('dark-mode-toggle');
+    const toggleSwitch = document.getElementById('dark-mode-toggle');
     const root = document.documentElement;
 
     // Load dark mode preference from localStorage
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
         root.classList.add('dark-mode');
     }
 
-    toggleButton.addEventListener('click', function () {
+    toggleSwitch.addEventListener('change', function () {
         root.classList.toggle('dark-mode');
         
         // Save dark mode preference to localStorage

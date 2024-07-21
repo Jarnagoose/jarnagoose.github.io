@@ -1,5 +1,6 @@
 :root {
     --color-A: #AC4DBF;
+    --color-A2: #AC4DBF;
     --color-B: #733380;
     --color-C: #451F4D;
     --color-D: #F27F0C;
@@ -7,10 +8,13 @@
     --color-F: #ffffff;
     --color-F2: #ffffffcc;
     --color-G: #000000;
+    --invertA: 100%;
+    --invertB: 0%;
 }
 
 :root.dark-mode {
     --color-A: #000000;
+    --color-A2: #AC4DBF;
     --color-B: #733380;
     --color-C: #181818;
     --color-D: #F27F0C;
@@ -18,6 +22,8 @@
     --color-F: #AC4DBF;
     --color-F2: #000000cc;
     --color-G: #FFFFFF;
+    --invertA: 100%;
+    --invertB: 100%;
 }
 
 body, html {
@@ -234,7 +240,7 @@ footer {
     font-family: 'ARCO Typography Regular', Fallback, sans-serif;
     font-weight: bold;
     font-size: 30px;
-    color: var(--color-A);
+    color: var(--color-A2);
     filter: drop-shadow(1px 1px 0px var(--color-C));
 }
 
@@ -340,8 +346,12 @@ footer {
     color: var(--color-F);
 }
 
-.filter-invert{
-    filter: invert(100%);
+.filter-invertA{
+    filter: invert(var(--invertA));
+}
+
+.filter-invertB{
+    filter: invert(var(--invertB));
 }
 
 .social-bar ul{
@@ -360,3 +370,68 @@ footer {
 .social-bar ul li:hover{
     transform: scale(1.1);
 }
+
+ /* The switch - the box around the slider */
+ .switch {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #cccccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 21px;
+    width: 21px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #AC4DBF;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #AC4DBF;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(21px);
+    -ms-transform: translateX(21px);
+    transform: translateX(21px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 28px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  } 
