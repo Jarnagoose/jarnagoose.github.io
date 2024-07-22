@@ -182,7 +182,7 @@ footer {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 50px 50px;
+    padding: 5% 0%;
   }
 
 .bg1 {
@@ -203,9 +203,10 @@ footer {
 
 .content {
     background: var(--color-F2);
-    padding: 20px 50px;
+    padding: 3% 5%;
     border-radius: 10px;
     width: 80%;
+
 }
 
 .left-justified-text{
@@ -327,13 +328,13 @@ footer {
 .contact-info ul {
     list-style-type: none;
     padding: 0 0;
-    line-height: 50%
+    line-height: 100%
 }
 
 .contact-info li {
-    margin: 5px 0;
-    align-items: left;
-    justify-content: left;
+    margin: 0 0;
+    align-items: center;
+    justify-content: center;
     transition: transform 0.15s;
 }
 
