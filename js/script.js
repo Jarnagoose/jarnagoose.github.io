@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const scrollToTopBtnR2 = document.getElementById("scrollToTopBtnR2");
 
     window.onscroll = function() {
-        const start = 160;
-        const end = 200;
+        const start = 140;
+        const end = 180;
         const scrollY = window.scrollY;
     
         // Calculate opacity based on scrollY
