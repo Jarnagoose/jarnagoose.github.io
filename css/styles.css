@@ -172,28 +172,29 @@ footer {
 }
 
 .parallax {
-    position: relative;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    text-align: center;
+    color: var(--color);
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px 50px;
+  }
 
 .bg1 {
     background-image: url('parallax/1.png');
-    height: 175vh;
 }
 
 .bg2 {
     background-image: url('parallax/2.png');
-    height: 175vh;
 }
 
 .bg3 {
     background-image: url('parallax/3.png');
-    height: 175vh;
 }
 
 .bannerlogo {
@@ -205,12 +206,10 @@ footer {
     padding: 20px 50px;
     border-radius: 10px;
     width: 80%;
-    position: absolute;
-    top: 50px;
 }
 
 .left-justified-text{
-    text-align: justify;
+    text-align: left;
 }
 
 @font-face {
