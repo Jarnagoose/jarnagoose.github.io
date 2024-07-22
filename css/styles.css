@@ -1,6 +1,6 @@
 :root {
     --color-A: #AC4DBF;
-    --color-A2: #AC4DBF;
+    --color-A2: #ffffff;
     --color-B: #733380;
     --color-C: #451F4D;
     --color-D: #F27F0C;
@@ -10,7 +10,7 @@
     --color-G: #000000;
     --color-H: #cccac2;
     --color-I: #ffffff;
-    --color-J: #cccac2;
+    --color-J: #451F4D;
     --invertA: 100%;
     --invertB: 0%;
 }
@@ -27,7 +27,7 @@
     --color-G: #FFFFFF;
     --color-H: #AC4DBF;
     --color-I: #000000;
-    --color-J: #363636;
+    --color-J: #181818;
     --invertA: 100%;
     --invertB: 100%;
 }
@@ -451,3 +451,10 @@ footer {
   .slider.round:before {
     border-radius: 50%;
   } 
+
+  .video-ultrawide video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block
+  }
