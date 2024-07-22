@@ -5,7 +5,21 @@ document.addEventListener("DOMContentLoaded", function() {
     const scrollToTopBtnR2 = document.getElementById("scrollToTopBtnR2");
 
     window.onscroll = function() {
-        if (window.scrollY > 160) {
+        const start = 160;
+        const end = 200;
+        const scrollY = window.scrollY;
+    
+        // Calculate opacity based on scrollY
+        let opacity = (scrollY - start) / (end - start);
+        opacity = Math.max(0, Math.min(1, opacity)); // Ensure opacity is between 0 and 1
+    
+        // Apply the opacity to the elements
+        scrollToTopBtnL.style.opacity = opacity;
+        scrollToTopBtnL2.style.opacity = opacity;
+        scrollToTopBtnR.style.opacity = opacity;
+        scrollToTopBtnR2.style.opacity = opacity;
+
+        if (opacity > 0) {
             scrollToTopBtnL.style.display = "block";
             scrollToTopBtnL2.style.display = "block";
             scrollToTopBtnR.style.display = "block";
@@ -17,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
             scrollToTopBtnR2.style.display = "none";
         }
     };
+    
 
     scrollToTopBtnL.addEventListener("click", function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
