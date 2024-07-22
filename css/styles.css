@@ -8,10 +8,10 @@
     --color-F: #ffffff;
     --color-F2: #ffffffcc;
     --color-G: #000000;
+    --color-H: #cccccc;
+    --color-I: #ffffff;
     --invertA: 100%;
     --invertB: 0%;
-    --slider-start: 4px;
-    --slider-move: 21;
 }
 
 :root.dark-mode {
@@ -24,10 +24,10 @@
     --color-F: #AC4DBF;
     --color-F2: #000000cc;
     --color-G: #FFFFFF;
+    --color-H: #AC4DBF;
+    --color-I: #000000;
     --invertA: 100%;
     --invertB: 100%;
-    --slider-start: 25;
-    --slider-move: -21;
 }
 
 body, html {
@@ -403,7 +403,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #cccccc;
+    background-color: var(--color-H);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -413,25 +413,25 @@ footer {
     content: "";
     height: 21px;
     width: 21px;
-    left: var(--slider-start);;
+    left: 4px;;
     bottom: 4px;
-    background-color: white;
+    background-color: var(--color-I);
     -webkit-transition: .4s;
     transition: .4s;
   }
   
   input:checked + .slider {
-    background-color: #AC4DBF;
+    background-color: var(--color-H);
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #AC4DBF;
+    box-shadow: 0 0 1px var(--color-H);
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(var(--slider-move));
-    -ms-transform: translateX(var(--slider-move));
-    transform: translateX(var(--slider-move));
+    -webkit-transform: translateX(21px);
+    -ms-transform: translateX(21px);
+    transform: translateX(21px);
   }
   
   /* Rounded sliders */
