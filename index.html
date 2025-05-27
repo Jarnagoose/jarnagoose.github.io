@@ -4,197 +4,189 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jarnagoose Studios</title>
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Jarnagoose Studios">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://jarnagoose.com/img/oglogoicon.png">
-    <meta property="og:description" content="Welcome to Jarnagoose Studios, we are a small collaboration of independent artists working hard to make video games worth playing!">
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="img/logo_textless_rounded_1x1_1080p_rgb.ico">
-    <!-- Bootstrap CSS -->
+    <!-- Fonts & Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Google Fonts CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- HEADER: Logo and Navbar -->
     <header>
-        <div class="banner">
-            <!--A link to "this"-->
-            <a href=".">
-                <img src="img/logo_main_57x31_620p_rgb.png" alt="A lovely domestic goose wearing a gold crown and honking majestically." width="228" height="122" id="goose" class="bannerlogo">
+        <div class="header-container">
+            <a href="." class="logo-link">
+                <img src="img/logo_main_57x31_620p_rgb.png" alt="Jarnagoose Studios Logo" id="main-logo" class="animated-logo">
             </a>
-        </div>
-        <!-- dark mode button -->
-        <div class="d-flex justify-content-center mt-3">
-            <label class="switch" id="dark-mode-toggle">
-                <input type="checkbox">
-                <span class="slider round"></span>
-            </label>
+            <nav class="main-navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <!-- Navbar for large screens -->
-<nav class="navbar navbar-expand-lg sticky-top navbar-large">
-    <div>
-        <button id="scrollToTopBtnL" aria-label="Scroll to Top" onclick="scrollToTop()">
-            <img src="img/logo_textless_rounded_1x1_1080p_rgb.png" width="35" height="35" alt="Scroll to Top">
-        </button>
-    </div>
-    <div class="collapse navbar-collapse" id="navbarLarge">
-        <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#aboutus">About Us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#ourwork">Our Work</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <button id="scrollToTopBtnR" class="filter-invertA" aria-label="Scroll to Top" onclick="scrollToTop()">
-            <img src="icons/arrow-up-circle-fill.svg" width="30" height="30" alt="Scroll to Top">
-        </button>
-    </div>
-</nav>
 
-<!-- Navbar for small screens -->
-<nav class="navbar navbar-expand-lg sticky-top navbar-small">
-    <div>
-        <button id="scrollToTopBtnL2" aria-label="Scroll to Top" onclick="scrollToTop()">
-            <img src="img/logo_textless_rounded_1x1_1080p_rgb.png" width="35" height="35" alt="Scroll to Top">
-        </button>
-    </div>
-    <button class="navbar-toggler ml-auto filter-invertA" type="button" data-toggle="collapse" data-target="#navbarSmall" aria-controls="navbarSmall" aria-expanded="false" aria-label="Toggle navigation">
-        <img src="icons/list.svg" width="35" height="35" alt="Menu">
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSmall">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item ml-auto">
-                <a class="nav-link" href="#aboutus">About Us</a>
-            </li>
-            <li class="nav-item ml-auto">
-                <a class="nav-link" href="#ourwork">Our Work</a>
-            </li>
-            <li class="nav-item ml-auto">
-                <a class="nav-link" href="#contact">Contact</a>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <button id="scrollToTopBtnR2" class="filter-invertA" aria-label="Scroll to Top" onclick="scrollToTop()">
-            <img src="icons/arrow-up-circle-fill.svg" width="30" height="30" alt="Scroll to Top">
-        </button>
-    </div>
-</nav>
-    <main class="container-fluid p-0">
-        <section class="video-ultrawide" oncontextmenu="return false;">
-                <video autoplay loop muted playsinline>
-                    <source src="ftg/geese_crossing.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video> 
-        </section>
-        <section id="aboutus" class="content-title-section">
-            <h2 class="content-title">About Us</h2>
-        </section>
-        <section class="parallax bg1">
-            <div class="content">
-                <div class="left-justified-text">
-                    <p>Jarnagoose Studios started as a group of passionate gamers looking to give back to the industry by rolling up their sleeves and making something for others to enjoy.</p>
-                    <p>But that doesn't tell the whole story.</p>
-                    <p>We want more than good game design. We want to bring authenticity and charm to the games we make. We want to show others that, with a good team, and dash of gumption, games can be fun and imaginative again!</p>
-                    <p>We don't answer to shareholders, we're not dictated by market trends and spreadsheets, we're just a silly little flock of gamers here at Jarnagoose Studios.</p>
-                </div>
+    <!-- HERO VIDEO SECTION -->
+    <section class="hero-video-section">
+        <div class="hero-video-wrapper">
+            <div class="video-overlay" id="videoOverlay">
+                <img src="img/wiamet_forest_concepts.jpg" alt="Wandercap Chronicle Feature Video" class="video-thumb" id="videoThumb">
+                <button class="video-play-btn" id="playBtn">
+                    <svg width="80" height="80" viewBox="0 0 80 80"><circle cx="40" cy="40" r="38" fill="rgba(172,77,191,0.82)" /><polygon points="32,24 60,40 32,56" fill="#fff"/></svg>
+                </button>
             </div>
-            <div class="content">
-                    <br>
-                    <div class="left-justified-text">
-                    <p>Speaking of our flock, you'd probably like to know a little bit more about our team here at Jarnagoose Studios:</p>
-                    <dl>
-                        <dt>Senior Developer: Serin</dt>
-                        <dd>Serin has been programming games for fun since he was just a little line of code, Serin was one of the first to join the flock, and has been here since the very beginning.</dd>
-                        <dt>Narrative Design/Project Manager: Indefinite</dt>
-                        <dd>Indefinite wears many hats, besides translating the crayon etched ravings of Mr. Jarnagoose into something coherent, Indefinite also serves to keep everyone focused. If anyone deserves a medal, it's him.</dd>
-                        <dt>Art Department: Czbc</dt>
-                        <dd>Somehow holding the entire art department together is one talented individual, CzBC. Legend says 18 years ago he taught Jarnagoose how to sprite his very first piece of art on the computer. Legend also says it was kinda bad.</dd>
-                        <dt>Composer: Jamie</dt>
-                        <dd>Be prepared to have your socks blown off by the musical stylings of our most talented composer. This will be her first game composition, but J<sup>2</sup> is no stranger to music, in fact you may have even seen her on tour with one of her bands!</dd>
-                        <dt>Creative Director/Head: Mr. Jarnagoose</dt>
-                        <dd><strong>*HONK*</strong> The creative driving force behind our studio is an enigma, some say he's more goose than man, some say he's more jar than goose. One thing is for sure, he really likes bread crusts and wobbling around.</dd>
-                    </dl>
-                </div>
-            </div>
-        </section>
-        <section id="ourwork" class="content-title-section">
-            <h2 class="content-title">Our Work</h2>
-        </section>
-        <section class="parallax bg2">
-            <div class="content">
-                <h3>🍄Wandercap Chronicle🍄</h3>
-                <div class="left-justified-text">
-                    <p>Our flagship title is a mushroom-themed, turn-based RPG, set in a fantastical world.</p>
-                    <p>Don't let the cute name confuse you! This adventure seeks to make unlikely heroes out of four mushfolk - our mushroom inspired people - as they journey across the land trying to figure out the origin of a force known only as Corruption.</p>
-                    <br>
-                    <p>This game is still in early development with no current release date for demos or alpha feedback. We're building this baby from the ground up, and that takes time!</p>
-                    <p>Until we get to a point where players can demo the first region, enjoy some art of our protagonists and let your imagination run wild! See you out in the forests!</p>
-                </div>
-            </div>
-        </section>
-        <section id="contact" class="content-title-section">
-            <h2 class="content-title">Contact</h2>
-        </section>
-        <section class="parallax bg3">
-            <div class="content">
-                <span>Hit us up on our socials:</span>
-                <div class="social-bar">
-                    <ul>
-                        <li><a href="https://linktr.ee/JarnagooseStudios/" target="_blank" rel="noopener noreferrer"><img src="icons/Linktree_idEu3RV5XQ_3.svg" width="25" height="25" id="linktree" alt="Linktree" class="filter-invertB"></a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="https://www.instagram.com/jarnagoose_studios/" target="_blank" rel="noopener noreferrer"><img src="icons/instagram.svg" width="25" height="25" id="instagram" alt="Instagram" class="filter-invertB"></a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="https://www.reddit.com/r/jarnagoosestudios/" target="_blank" rel="noopener noreferrer"><img src="icons/reddit.svg" width="25" height="25" id="reddit" alt="Reddit" class="filter-invertB"></a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="https://www.linkedin.com/company/jarnagoose-studios/" target="_blank" rel="noopener noreferrer"><img src="icons/linkedin.svg" width="25" height="25" id="linkedin" alt="LinkedIn" class="filter-invertB"></a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="https://www.tiktok.com/@jarnagoosestudios/" target="_blank" rel="noopener noreferrer"><img src="icons/tiktok.svg" width="25" height="25" id="tiktok" alt="TikTok" class="filter-invertB"></a></li>
-                    </ul>
-                </div>
-                <span>or the old-fashioned way:</span>
-                <div class="contact-info">
-                    <ul>
-                        <li><span id="email">jarnagoosestudios@gmail.com</span> <span class="copy-icon" onclick="copyToClipboard('email')"><img src="icons/copy.svg" alt="Copy Email" class="filter-invertB"></span></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </main>
+            <video id="featureVideo" class="feature-video" style="display:none;" controls poster="img/video-thumbnail.jpg">
+                <source src="ftg/geese_crossing.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
 
-    <footer class="text-center py-4">
-        <h7 class="h7">&copy; 
-<!-- Automatic Year (date script) -->
-<script language="JavaScript" type="text/javascript">
-<!--
-        var dt = new Date();
-        var y  = dt.getYear();
-        // Y2K compliant
-        if (y < 1000) y +=1900;
-        document.write(y);
-// -->
+    <!-- GAME TITLE & DESCRIPTION -->
+    <section class="game-highlight-section">
+        <h2 class="game-title">WANDERCAP CHRONICLES</h2>
+        <div class="game-desc-container">
+            <div class="game-desc-text">
+                <p>Journey with four unlikely heroes as they discover the means to purge Corruption, a strange force that twists the minds and bodies of living creatures into savage, malicious beings.</p>
+                <p>Only by rekindling and reconnecting the lost spaces of the world and following in the steps of legends before can this group succeed.</p>
+            </div>
+            <div class="game-gallery">
+                <img src="img/screenshot-1.png" alt="Screenshot 1">
+                <img src="img/screenshot-1.png" alt="Screenshot 2">
+                <img src="img/screenshot-1.png" alt="Screenshot 3">
+            </div>
+        </div>
+        <a class="btn btn-dark game-homepage-btn" href="#">Visit the Wandercap Chronicles homepage</a>
+    </section>
+
+<!-- TEAM CAROUSEL SECTION -->
+<section class="team-carousel-section" id="aboutus">
+  <div class="team-carousel-wrapper">
+    <div class="team-carousel" id="teamCarousel">
+    <a href="about-kyle.html" class="team-member-link"><img src="img/team/team_j.png" alt="Kyle"></a>
+      <a href="about-marcus.html" class="team-member-link"><img src="img/team/serin.jpg" alt="Marcus"></a>
+      <a href="about-zach.html" class="team-member-link"><img src="img/team/team_r.png" alt="Zach"></a>
+      <a href="about-chaz.html" class="team-member-link"><img src="img/team/team_c.png" alt="Chaz"></a>
+      <a href="about-chris.html" class="team-member-link"><img src="img/team/team_b.png" alt="Chris"></a>
+      <a href="about-jamie.html" class="team-member-link"><img src="img/team/jamie.jpg" alt="Jamie"></a>
+      
+      <!-- Add more members as needed -->
+    </div>
+  </div>
+  <div class="team-desc-bar">
+    <div>
+      <p>We are artists and developers with a love for games that get us to feel the passion and mystique behind them. We don’t just make games, we make games others want to play by making games we want to play.</p>
+      <p class="team-select-prompt">Select a team member to learn more about them.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIALS SECTION -->
+<section class="socials-section" id="contact">
+  <div class="socials-icons-bar">
+    <a href="https://www.linkedin.com/company/jarnagoose-studios/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+      <img src="icons/linkedin.svg" alt="LinkedIn">
+    </a>
+    <a href="https://www.youtube.com/@jarnagoosestudios" target="_blank" rel="noopener noreferrer" title="YouTube">
+      <img src="icons/youtube.svg" alt="YouTube">
+    </a>
+    <a href="https://www.tiktok.com/@jarnagoosestudios/" target="_blank" rel="noopener noreferrer" title="TikTok">
+      <img src="icons/tiktok.svg" alt="TikTok">
+    </a>
+    <a href="https://www.instagram.com/jarnagoose_studios/" target="_blank" rel="noopener noreferrer" title="Instagram">
+      <img src="icons/instagram.svg" alt="Instagram">
+    </a>
+    <a href="https://www.reddit.com/r/jarnagoosestudios/" target="_blank" rel="noopener noreferrer" title="Reddit">
+      <img src="icons/reddit.svg" alt="Reddit">
+    </a>
+    <a href="https://bsky.app/profile/jarnagoosestudios.bsky.social" target="_blank" rel="noopener noreferrer" title="Bluesky">
+      <img src="icons/Bluesky_logo_(black).svg" alt="Bluesky">
+    </a>
+  </div>
+  <a href="https://linktr.ee/JarnagooseStudios/" target="_blank" class="socials-linktree-btn">
+    Find more socials on our Linktr.ee
+  </a>
+</section>
+
+
+<footer class="site-footer">
+  <div class="footer-logo-bar">
+    <img src="img/logo_main_57x31_620p_rgb.png" alt="Jarnagoose Studios Footer Logo" class="footer-logo">
+  </div>
+  <div class="footer-copyright">
+    &copy; <span id="footer-year"></span> Jarnagoose Studios. All Rights Reserved.
+  </div>
+</footer>
+<script>
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
 </script>
 
-Jarnagoose Studios. All Rights Reserved.</h7>
-    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+<!-- SCRIPTS SECTION -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script>
+    // Logo & Navbar entrance animation
+    window.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('main-logo').classList.add('logo-fly-in');
+        document.querySelector('.main-navbar').classList.add('navbar-slide-down');
+    });
+
+    // Video play logic
+    const playBtn = document.getElementById('playBtn');
+    const videoOverlay = document.getElementById('videoOverlay');
+    const featureVideo = document.getElementById('featureVideo');
+    playBtn.addEventListener('click', function() {
+        videoOverlay.style.display = 'none';
+        featureVideo.style.display = 'block';
+        featureVideo.play();
+    });
+</script>
+<script>
+// ===== INFINITE TEAM CAROUSEL AUTOSCROLL =====
+(function() {
+    const wrapper = document.querySelector('.team-carousel-wrapper');
+    const carousel = document.getElementById('teamCarousel');
+    if (!wrapper || !carousel) return;
+
+    // Clone all children for seamless looping
+    const slidesToClone = Array.from(carousel.children);
+    slidesToClone.forEach(node => carousel.appendChild(node.cloneNode(true)));
+
+    let scrollAmount = 0;
+    const speed = .40; // Adjust scroll speed (px per frame)
+    const resetPoint = carousel.scrollWidth / 2;
+
+    function autoScroll() {
+        scrollAmount += speed;
+        if (scrollAmount >= resetPoint) {
+            scrollAmount = 0;
+        }
+        wrapper.scrollLeft = scrollAmount;
+        requestAnimationFrame(autoScroll);
+    }
+    // Prevent manual scroll from breaking the loop
+    wrapper.addEventListener('scroll', function() {
+        if (wrapper.scrollLeft >= resetPoint) {
+            wrapper.scrollLeft = 0;
+            scrollAmount = 0;
+        }
+    });
+    requestAnimationFrame(autoScroll);
+
+    let paused = false;
+wrapper.addEventListener('mouseenter', () => paused = true);
+wrapper.addEventListener('mouseleave', () => paused = false);
+
+function autoScroll() {
+    if (!paused) {
+        scrollAmount += speed;
+        if (scrollAmount >= resetPoint) {
+            scrollAmount = 0;
+        }
+        wrapper.scrollLeft = scrollAmount;
+    }
+    requestAnimationFrame(autoScroll);
+}
+})();
+</script>
 </body>
 </html>
