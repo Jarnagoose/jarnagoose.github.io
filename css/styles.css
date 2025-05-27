@@ -827,3 +827,200 @@ footer {
     margin-top: 8px;
     opacity: 0.75;
 }
+
+/* About Us Pages */
+.about-member-main {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-member-section {
+    width: 95%;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 48px 0 32px 0;
+}
+.about-member-content {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 24px;
+}
+.about-member-info {
+    flex: 3;
+    min-width: 260px;
+}
+.member-name.arcofont {
+    font-family: 'ARCO Typography Regular', 'Karmatic Arcade', 'Livvic', sans-serif;
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1.2px;
+    margin-bottom: 0.25em;
+    text-shadow: 2px 2px 0 #ac4dbf;
+}
+.member-title.karmatic {
+    font-family: 'Karmatic Arcade', 'ARCO Typography Regular', sans-serif;
+    font-size: 1.18rem;
+    color: #ac4dbf;
+    margin-bottom: 18px;
+    margin-right: 18px;
+    display: inline-block;
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+}
+.linkedin-btn {
+    display: inline-flex;
+    align-items: center;
+    background: #ac4dbf;
+    color: #fff;
+    font-family: 'Livvic', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px 10px 16px;
+    margin-bottom: 22px;
+    text-decoration: none;
+    gap: 8px;
+    box-shadow: 0 2px 10px #ac4dbf18;
+    transition: background .22s;
+}
+.linkedin-btn img {
+    width: 22px;
+    height: 22px;
+    filter: invert(1);
+}
+.linkedin-btn:hover {
+    background: #F27F0C;
+    color: #231629;
+}
+.member-description {
+    color: #fff;
+    font-family: 'Livvic', sans-serif;
+    margin-top: 0;
+    font-size: 1.07rem;
+    background: rgba(44,26,60,0.89);
+    border-radius: 8px;
+    padding: 20px 22px;
+}
+.favorite-games {
+    margin-top: 20px;
+    color: #fff;
+}
+.favorite-games b {
+    color: #F27F0C;
+    font-weight: bold;
+}
+.favorite-games i {
+    color: #eee;
+}
+
+.about-member-imagebox {
+    flex: 2;
+    min-width: 210px;
+    max-width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.member-image {
+    width: 100%;
+    height: auto;
+    max-width: 280px;
+    border-radius: 10px;
+    border: 5px solid #ac4dbf;
+    object-fit: cover;
+    background: #1b1223;
+    box-shadow: 0 2px 16px #ac4dbf50;
+}
+.about-member-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-arrow {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    background: #ac4dbf;
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'ARCO Typography Regular', sans-serif;
+    text-align: center;
+    line-height: 42px;
+    border-radius: 7px;
+    border: none;
+    text-decoration: none;
+    transition: background .2s, color .2s;
+}
+.about-arrow:hover {
+    background: #F27F0C;
+    color: #231629;
+}
+.site-footer .footer-logo-bar {
+    margin-bottom: 6px;
+}
+.site-footer .footer-contact-bar {
+    margin-bottom: 6px;
+    color: #fff;
+    font-family: 'Livvic', sans-serif;
+    font-size: 1.09rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+.site-footer .footer-email {
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+.site-footer .copy-icon {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    filter: invert(1);
+    vertical-align: middle;
+}
+@media (max-width: 900px) {
+    .about-member-content {
+        flex-direction: column-reverse;
+        gap: 20px;
+        align-items: center;
+    }
+    .about-member-imagebox {
+        max-width: 80vw;
+        margin-bottom: 8px;
+    }
+}
+
+
+/* Footer */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main, .about-member-main, .about-member-section {
+    flex: 1 0 auto;
+}
+
+.site-footer {
+    flex-shrink: 0;
+}
+
+body {
+    background: var(--color-C);
+    color: var(--color-F);
+}
