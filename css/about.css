@@ -1,0 +1,76 @@
+.about-team {
+  background: linear-gradient(
+    135deg,
+    #fc74a0 0%,
+    #ac4dbf 40%,
+    #733380 70%,
+    #f27f0c 100%
+  );
+  border-radius: 10px;
+}
+
+.about-team-title {
+  font-family: "ARCOTypography", sans-serif;
+  color: #f9f9f9;
+}
+
+.about-team-description {
+  font-family: "Livvic", sans-serif;
+  color: #f9f9f9;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.about-team-member .card {
+  border-radius: 10px;
+  background-color: #733380;
+}
+.about-team-member {
+  background-color: #733380;
+}
+
+.about-team-member .accordion-header {
+}
+
+.about-team-member .accordion-button {
+  background: linear-gradient(
+    135deg,
+    #fc74a0 0%,
+    #ac4dbf 40%,
+    #733380 70%,
+    #f27f0c 100%
+  );
+}
+
+.about-team-member .card-title {
+  font-family: "ARCOTypography", "KarmaticArcade", "Livvic", sans-serif;
+  color: #fff;
+  letter-spacing: 1.2px;
+  text-shadow: 2px 2px 0 #ac4dbf;
+  font-size: 1.5rem;
+}
+
+.about-team-member .card-text {
+  color: #f9f9f9;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.member-description {
+  color: #fff;
+  font-family: "Livvic", sans-serif;
+  margin-top: 0;
+  font-size: 1.07rem;
+  background: rgba(44, 26, 60, 0.89);
+}
+
+/* About Game */
+.about-game-header {
+  border-radius: 10px;
+  background-color: #733380;
+  min-height: 200px;
+}
+.about-game-header h2 {
+  color: #fff;
+  font-family: "ARCOTypography", sans-serif;
+}

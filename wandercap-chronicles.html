@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jarnagoose Studios</title>
+    <title>Jarnagoose Studios - Meet the Team</title>
     <!-- Fonts & Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -16,8 +16,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/about.css" />
   </head>
   <body>
+    <!-- MAIN CONTENT -->
     <div class="container">
       <!-- HEADER: Logo and Navbar -->
       <header>
@@ -55,135 +57,11 @@
           </div>
         </nav>
       </header>
-      <!-- HERO VIDEO SECTION -->
-      <section class="hero-video">
-        <div class="hero-video-wrapper">
-          <div class="video-overlay" id="videoOverlay">
-            <img
-              src="img/wiamet_forest_concepts.jpg"
-              alt="Wandercap Chronicle Feature Video"
-              class="video-thumb"
-              id="videoThumb"
-            />
-            <button class="video-play-btn" id="playBtn">
-              <svg width="80" height="80" viewBox="0 0 80 80">
-                <rect
-                  x="2"
-                  y="2"
-                  width="76"
-                  height="76"
-                  rx="15"
-                  ry="15"
-                  fill="rgba(172,77,191,0.82)"
-                />
-                <polygon
-                  points="32,24 60,40 32,56"
-                  fill="#fff"
-                  transform="translate(-4 0)"
-                />
-              </svg>
-            </button>
-          </div>
-          <video
-            id="featureVideo"
-            class="feature-video"
-            style="display: none"
-            controls
-            poster="img/video-thumbnail.jpg"
-          >
-            <source src="ftg/geese_crossing.mp4" type="video/mp4" />
-          </video>
-        </div>
-      </section>
 
-      <!-- GAME TITLE & DESCRIPTION -->
-      <section class="game-highlight my-2">
-        <h2 class="game-title p-2 pt-3 text-center">WANDERCAP CHRONICLES</h2>
-        <div class="row">
-          <div class="col-sm-9 col-lg-12">
-            <div class="game-description mx-2 my-1 p-2">
-              <p>
-                Journey with four unlikely heroes as they discover the means to
-                purge Corruption, a strange force that twists the minds and
-                bodies of living creatures into savage, malicious beings.
-              </p>
-              <p>
-                Only by rekindling and reconnecting the lost spaces of the world
-                and following in the steps of legends before can this group
-                succeed.
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-12">
-            <div class="game-gallery">
-              <div class="row">
-                <div class="col-lg-4">
-                  <a
-                    href="img/screenshot-1.png"
-                    data-toggle="lightbox"
-                    data-gallery="game-gallery"
-                  >
-                    <img
-                      class="img-fluid my-2"
-                      src="img/screenshot-1.png"
-                      alt="Screenshot 1"
-                    />
-                  </a>
-                </div>
-                <div class="col-lg-4">
-                  <a
-                    href="img/screenshot-1.png"
-                    data-toggle="lightbox"
-                    data-gallery="game-gallery"
-                  >
-                    <img
-                      class="img-fluid my-2"
-                      src="img/screenshot-1.png"
-                      alt="Screenshot 2"
-                    />
-                  </a>
-                </div>
-                <div class="col-lg-4">
-                  <a
-                    href="img/screenshot-1.png"
-                    data-toggle="lightbox"
-                    data-gallery="game-gallery"
-                  >
-                    <img
-                      class="img-fluid my-2"
-                      src="img/screenshot-1.png"
-                      alt="Screenshot 3"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="text-center">
-              <a class="btn game-homepage-btn" href="#"
-                >Visit the Wandercap Chronicles homepage</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- TEAM CAROUSEL SECTION -->
-      <section class="team-highlight py-2">
-        <img src="img/team-placeholder.jpg" alt="" class="img-fluid" />
-        <div class="row">
-          <div class="col">
-            <div class="team-description text-center">
-              <h3 class="team-text">Jarnagoose Studios Team</h3>
-              <a href="/about-team.html" class="btn game-homepage-btn"
-                >Meet the Team</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
+      <!-- ABOUT GAME -->
+      <div class="about-game-header my-2">
+        <h2 class="p-2 text-center">Coming Soon!</h2>
+      </div>
 
       <!-- SOCIALS SECTION -->
       <section class="socials-section" id="contact">
@@ -252,7 +130,6 @@
           </div>
         </div>
       </section>
-
       <footer class="site-footer">
         <div class="footer-logo-bar">
           <img
@@ -274,17 +151,6 @@
         new Date().getFullYear();
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script>
-      // Video play logic
-      const playBtn = document.getElementById("playBtn");
-      const videoOverlay = document.getElementById("videoOverlay");
-      const featureVideo = document.getElementById("featureVideo");
-      playBtn.addEventListener("click", function () {
-        videoOverlay.style.display = "none";
-        featureVideo.style.display = "block";
-        featureVideo.play();
-      });
-    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
