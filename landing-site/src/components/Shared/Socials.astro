@@ -1,0 +1,60 @@
+
+      ---
+import linkedinIcon from '../../assets/icons/linkedin.svg';
+import youtubeIcon from '../../assets/icons/youtube.svg';
+import tiktokIcon from '../../assets/icons/tiktok.svg';
+import instagramIcon from '../../assets/icons/instagram.svg';
+import redditIcon from '../../assets/icons/reddit.svg';
+import blueskyIcon from '../../assets/icons/Bluesky_logo_(black).svg';
+
+const socials = [
+  {
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/company/jarnagoose-studios/',
+    icon: linkedinIcon,
+  },
+  {
+    name: 'YouTube',
+    url: 'https://www.youtube.com/@jarnagoosestudios',
+    icon: youtubeIcon,
+  },
+  {
+    name: 'TikTok',
+    url: 'https://www.tiktok.com/@jarnagoosestudios/',
+    icon: tiktokIcon,
+  },
+  {
+    name: 'Instagram',
+    url: 'https://www.instagram.com/jarnagoose_studios/',
+    icon: instagramIcon,
+  },
+  {
+    name: 'Reddit',
+    url: 'https://www.reddit.com/r/jarnagoosestudios/',
+    icon: redditIcon,
+  },
+  {
+    name: 'Bluesky',
+    url: 'https://bsky.app/profile/jarnagoosestudios.bsky.social',
+    icon: blueskyIcon,
+  },
+];
+---
+
+<section id="contact" class="py-12 bg-gray-200">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-6">
+      {socials.map((social) => (
+        <a
+          href={social.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          title={social.name}
+          class="flex items-center justify-center hover:opacity-80 transition-opacity"
+        >
+          <img src={social.icon.src} alt={social.name} class="h-8 w-8" />
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

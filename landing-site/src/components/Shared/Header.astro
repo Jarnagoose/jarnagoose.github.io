@@ -1,0 +1,123 @@
+---
+import logo from '../../assets/img/logo_main_57x31_620p_rgb.png';
+---
+
+<header class="bg-gray-900 text-white">
+  <nav class="max-w-7xl mx-auto px-4 h-16 text-xl">
+    <div class="relative flex justify-center md:justify-between items-center h-full">
+      <!-- Logo -->
+      <a href="/" class="flex-shrink-0 h-full flex items-center hover:scale-110 transition-transform duration-300">
+        <img
+          src={logo.src}
+          alt="Jarnagoose Studios Logo"
+          id="main-logo"
+          class="h-full w-auto py-2"
+          style="animation: fadeIn 2s ease-in-out;"
+        />
+      </a>
+
+      <!-- Mobile menu button -->
+      <button
+        id="mobile-menu-btn"
+        class="absolute right-4 md:hidden p-2 rounded-md hover:bg-gray-800"
+        aria-label="Toggle navigation"
+      >
+        <svg
+          class="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+
+      <!-- Navigation menu -->
+      <div
+        id="nav-menu"
+        class="hidden md:flex space-x-8"
+      >
+        <a
+          href="/"
+          class="hover:text-purple-400 transition-colors"
+        >
+          Home
+        </a>
+        <a
+          href="/team"
+          class="hover:text-purple-400 transition-colors"
+        >
+          Team
+        </a>
+        <a
+          href="/wandercap-chronicles"
+          class="hover:text-purple-400 transition-colors"
+        >
+          Wandercap
+        </a>
+        <a
+          href="/#contact"
+          class="hover:text-purple-400 transition-colors"
+        >
+          Contact
+        </a>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div
+      id="mobile-nav"
+      class="hidden md:hidden mt-4 space-y-2"
+    >
+      <a
+        href="/"
+        class="block px-3 py-2 rounded-md hover:bg-gray-800"
+      >
+        Home
+      </a>
+      <a
+        href="/about-team.html"
+        class="block px-3 py-2 rounded-md hover:bg-gray-800"
+      >
+        About
+      </a>
+      <a
+        href="/wandercap-chronicles.html"
+        class="block px-3 py-2 rounded-md hover:bg-gray-800"
+      >
+        Wandercap
+      </a>
+      <a
+        href="#contact"
+        class="block px-3 py-2 rounded-md hover:bg-gray-800"
+      >
+        Contact
+      </a>
+    </div>
+  </nav>
+</header>
+
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+
+<script>
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileNav = document.getElementById('mobile-nav');
+
+  mobileMenuBtn?.addEventListener('click', () => {
+    mobileNav?.classList.toggle('hidden');
+  });
+</script>
