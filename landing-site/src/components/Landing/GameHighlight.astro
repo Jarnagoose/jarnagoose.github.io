@@ -1,0 +1,77 @@
+---
+import screenshot1 from '../../assets/img/screenshot-1.png';
+---
+
+<section class="py-12 bg-gray-800">
+  <div class="max-w-7xl mx-auto px-4">
+    <!-- Game Title -->
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-8 text-white">
+      WANDERCAP CHRONICLES
+    </h2>
+
+    <!-- Game Description and Gallery -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+      <!-- Description -->
+      <div class="lg:col-span-2">
+        <div class="space-y-4 text-lg leading-relaxed text-gray-300">
+          <p>
+            Journey with four unlikely heroes as they discover the means to
+            purge Corruption, a strange force that twists the minds and
+            bodies of living creatures into savage, malicious beings.
+          </p>
+          <p>
+            Only by rekindling and reconnecting the lost spaces of the world
+            and following in the steps of legends before can this group
+            succeed.
+          </p>
+        </div>
+      </div>
+
+      <!-- Gallery -->
+      <div class="lg:col-span-1">
+        <div class="grid grid-cols-3 gap-4">
+          <a
+            href={screenshot1.src}
+            class="group cursor-pointer overflow-hidden rounded-lg"
+          >
+            <img
+              src={screenshot1.src}
+              alt="Screenshot 1"
+              class="w-full h-auto transition-transform duration-300 group-hover:scale-110"
+            />
+          </a>
+          <a
+            href={screenshot1.src}
+            class="group cursor-pointer overflow-hidden rounded-lg"
+          >
+            <img
+              src={screenshot1.src}
+              alt="Screenshot 2"
+              class="w-full h-auto transition-transform duration-300 group-hover:scale-110"
+            />
+          </a>
+          <a
+            href={screenshot1.src}
+            class="group cursor-pointer overflow-hidden rounded-lg"
+          >
+            <img
+              src={screenshot1.src}
+              alt="Screenshot 3"
+              class="w-full h-auto transition-transform duration-300 group-hover:scale-110"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Button -->
+    <div class="flex justify-center">
+      <a
+        href="/wandercap-chronicles"
+        class="px-8 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg transition-colors duration-200"
+      >
+        Visit the Wandercap Chronicles homepage
+      </a>
+    </div>
+  </div>
+</section>

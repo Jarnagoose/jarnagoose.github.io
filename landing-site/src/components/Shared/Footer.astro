@@ -1,0 +1,29 @@
+---
+import logo from '../../assets/img/logo_main_57x31_620p_rgb.png';
+---
+
+<footer class="bg-gray-900 text-white py-8">
+  <div class="max-w-7xl mx-auto px-4">
+    <!-- Logo -->
+    <div class="flex justify-center mb-6">
+      <img
+        src={logo.src}
+        alt="Jarnagoose Studios Footer Logo"
+        class="h-8 w-auto"
+      />
+    </div>
+    
+    <!-- Copyright -->
+    <div class="text-center text-gray-400 text-sm">
+      &copy; <span id="footer-year"></span> Jarnagoose Studios. All Rights
+      Reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  const yearElement = document.getElementById("footer-year");
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear().toString();
+  }
+</script>
